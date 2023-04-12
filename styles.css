@@ -364,6 +364,7 @@ a {
     right: 3%;
     animation-delay: 0.25s;
     animation: logo 2s ease-in;
+    z-index: 1; /* added to keep media above fruits */
 
  }
 
