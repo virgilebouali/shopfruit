@@ -386,10 +386,11 @@ a {
     padding: 10px;
     background-color: #E7DFC6;
     justify-content: center;
-    top: 2.5%;
-    right: 3%;
+    top: 1.5%;
+    right: 2%;
     animation-delay: 0.25s;
     animation: logo 2s ease-in;
+    z-index: 1;
 }
 
 @media (max-width: 1780px) {
@@ -402,5 +403,34 @@ a {
 .media_link:hover {
 
     width: 110%;
+
+}
+
+@media (max-width: 900px){
+    /* body{
+        display: flex;
+        flex-direction: column;
+    } */
+    .main_header{
+        display: flex;
+        flex-direction: column;
+        padding-left: auto;
+        padding-right: auto;
+    }
+    .main_title{
+        align-self: center;
+    }
+    .main_nav{
+        align-self: center;
+        display: grid;
+        grid-column: 1;
+        padding-right: 180px;
+        z-index: 100;
+    }
+    .social_media{
+
+    top: 1.5%;
+    right: 2%;
+    }
 
 }
