@@ -3,7 +3,7 @@
     font-family: 'Poppins', sans-serif;
     color: var(--text-color, #E7DFC6);
     background-color: #fff;
-    
+
 
 
 }
@@ -11,7 +11,7 @@
 html {
 
     position: relative;
-    overflow:auto;
+    overflow: auto;
 }
 
 body {
@@ -29,7 +29,7 @@ body {
 .main {
 
     overflow: hidden;
-    
+
 }
 
 
@@ -51,7 +51,7 @@ body {
     background-color: var(--background-color, #3eafce);
     z-index: 10;
 
-   
+
 
 }
 
@@ -60,7 +60,7 @@ body {
     font-weight: bold;
     font-size: 5em;
     letter-spacing: 0.5em;
-    text-shadow:5px 5px #000000;
+    text-shadow: 5px 5px #000000;
     animation: logo 1s ease-in;
     margin-right: 0px;
     z-index: 2;
@@ -79,7 +79,7 @@ body {
 
     padding: 10px;
     margin-left: 10px;
-    text-shadow:2px 1px #3f3f3f;
+    text-shadow: 2px 1px #3f3f3f;
 
 }
 
@@ -117,7 +117,7 @@ a {
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 20px;
-    text-shadow:5px 5px #000000;
+    text-shadow: 5px 5px #000000;
     z-index: 10;
 
 }
@@ -136,7 +136,8 @@ a {
     background-color: rgba(58, 58, 55, 0.3);
     border-radius: 10px 10px;
     padding: 40px;
-    box-shadow: 5px 5px #000000;;
+    box-shadow: 5px 5px #000000;
+    ;
     z-index: 5;
     animation: logo 2s ease-in;
     opacity: 100%;
@@ -148,9 +149,9 @@ a {
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 0.6em;
-    text-shadow:5px 5px #000000;
-   margin-bottom: 15px;
-   z-index: 2;
+    text-shadow: 5px 5px #000000;
+    margin-bottom: 15px;
+    z-index: 2;
 
 }
 
@@ -168,7 +169,8 @@ a {
     display: flex;
     flex-direction: column;
     background-color: rgba(55, 57, 58, 0.3);
-    font-size: 1.2em;;
+    font-size: 1.2em;
+    ;
     align-items: center;
     padding: 10px;
     padding-bottom: 30px;
@@ -176,6 +178,7 @@ a {
     z-index: 2;
     animation: logo 1s ease-in;
 }
+
 .product:hover {
 
     width: 400px;
@@ -183,7 +186,8 @@ a {
     display: flex;
     flex-direction: column;
     background-color: rgba(55, 57, 58, 0.6);
-    font-size: 1.2em;;
+    font-size: 1.2em;
+    ;
     align-items: center;
     padding: 10px;
     margin: 10px;
@@ -197,8 +201,9 @@ a {
     border: 1px solid #E7DFC6;
     background-color: rgba(55, 57, 58, 0.3);
     border: 2px solid #000000;
-    box-shadow: 5px 5px #000000;;
-   
+    box-shadow: 5px 5px #000000;
+    ;
+
 }
 
 .product_title {
@@ -207,8 +212,9 @@ a {
     font-weight: bold;
     margin-bottom: 10px;
     padding: 20px;
-    letter-spacing: 0.1em;;
-    text-shadow:2px 2px #000000;
+    letter-spacing: 0.1em;
+    ;
+    text-shadow: 2px 2px #000000;
 }
 
 .product_description {
@@ -223,27 +229,30 @@ a {
     font-size: 1.8em;
     font-weight: bold;
     margin-left: 5%;
-    text-shadow:5px 5px #000000;
+    text-shadow: 5px 5px #000000;
 }
 
 .buy_button {
     background-color: #070605;
-    padding:5px;
+    padding: 5px;
     font-size: 1.6em;
-    border-radius: 10px;;
+    border-radius: 10px;
+    ;
     flex-direction: row;
     margin-left: 70px;
     text-align: center;
-    box-shadow: 5px 5px #000000;;
-    padding-bottom :10px;
+    box-shadow: 5px 5px #000000;
+    ;
+    padding-bottom: 10px;
 }
 
 .buy_button:hover {
     background-color: #ffffff;
-    padding:5px;
+    padding: 5px;
     color: #000000;
     font-size: 1.6em;
-    border-radius: 10px;;
+    border-radius: 10px;
+    ;
     flex-direction: row;
     margin-left: 70px;
     text-align: center;
@@ -251,17 +260,19 @@ a {
 
 .action {
 
-    display:flex;
+    display: flex;
     align-items: baseline;
-    
+
 }
 
 .product_display {
 
     display: flex;
     margin: 0%;
-    margin-left: 300px;
-    margin-right: 250px;
+    /* better aligns the products un meilleur alignement des produits ? */
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 40px;
     animation: popup 1s ease-in-out;
@@ -280,54 +291,69 @@ a {
     z-index: 10;
 }
 
- @keyframes logo {
+@keyframes logo {
 
-    from {opacity: 0;}
-  to {opacity :1 }
- }
+    from {
+        opacity: 0;
+    }
 
- @keyframes nav {
+    to {
+        opacity: 1
+    }
+}
 
-    from {opacity: 0;}
-  to {opacity :1 }
- }
+@keyframes nav {
 
- @keyframes popup {
+    from {
+        opacity: 0;
+    }
 
-    from {transform: translateY(100px);}
-    to {transform: translateY(0px)}
- }
- 
+    to {
+        opacity: 1
+    }
+}
 
- #fruits {
+@keyframes popup {
 
-    position:absolute;
+    from {
+        transform: translateY(100px);
+    }
+
+    to {
+        transform: translateY(0px)
+    }
+}
+
+
+#fruits {
+
+    position: absolute;
     top: 0%;
     transform: rotate(90deg);
     left: -550px;
     z-index: 0;
     animation: logo 3s ease-in;
     pointer-events: none;
-   
 
- }
 
- #fruits2 {
+}
 
-    position:absolute;
+#fruits2 {
+
+    position: absolute;
     top: 0%;
     transform: rotate(-90deg);
     right: -550px;
     z-index: 0;
     animation: logo 3s ease-in;
     pointer-events: none;
-    
 
- }
 
- #fruits3 {
+}
 
-    position:absolute;
+#fruits3 {
+
+    position: absolute;
     pointer-events: none;
     width: 110%;
     top: 1000px;
@@ -336,11 +362,11 @@ a {
     opacity: 30%;
 
 
- }
+}
 
- #fruits4 {
+#fruits4 {
 
-    position:absolute;
+    position: absolute;
     pointer-events: none;
     width: 110%;
     top: 1600px;
@@ -349,34 +375,32 @@ a {
     z-index: -1;
 
 
- }
+}
 
- .social_media {
+.social_media {
     position: absolute;
     display: flex;
-    border:  solid #000000;
+    border: solid #000000;
     box-shadow: 1px 5px #000000;
     border-radius: 30%;
     padding: 10px;
     background-color: #E7DFC6;
     justify-content: center;
-    top:2.5%;
+    top: 2.5%;
     right: 3%;
     animation-delay: 0.25s;
     animation: logo 2s ease-in;
-    z-index: 1; /* added to keep media above fruits */
+}
 
- }
+@media (max-width: 1780px) {
+    .social_media {
+        top: 150px;     /* prevents media from overlapping main_nav at widths less than 1800px - empêche les médias de chevaucher main_nav à des largeurs inférieures à 1800px*/
+        right: 150px;  
+    }
+}
 
 .media_link:hover {
 
     width: 110%;
 
 }
-
-
-
-
-
-
-
